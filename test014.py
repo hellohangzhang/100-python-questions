@@ -8,13 +8,13 @@ k = 0 #counting the circulation number
 
 
 for i in range(5,10001):
-	for j in range(2,int(i**0.5)+1):
-		k += 1
-		if i%j == 0:
-			k = 0
+    for j in range(2,int(i**0.5)+1):
+        k += 1
+        if i%j == 0:
+		    k = 0
 			break
 		if k == int(i**0.5) - 1:
-			prime_number.append(i)
+		    prime_number.append(i)
 			
 				
 number = int(input("Input a number:"))
@@ -24,8 +24,8 @@ for i in range(len(prime_number)):
 	flag = True
 	while flag:
 		if number%prime_number[i] == 0:
-			zhiyinshu.append(prime_number[i])
-			number /= prime_number[i]
+		    zhiyinshu.append(prime_number[i])
+		    number /= prime_number[i]
 		else:
 			flag = False
 			
